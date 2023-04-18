@@ -1,0 +1,62 @@
+Cria uma função que recebe como argumento
+ um número m e retorna o mês correspondente.
+Correspondências:
+1 - Janeiro
+2 - Fevereiro
+3 - Março
+4 - Abril
+5 - Maio
+6 - Junho
+7 - Julho
+8 - Agosto
+9 - Setembro
+10 - Outubro
+11 - Novembro
+12 - Dezembro
+Quando recebe um número diferente deve retornar a mensagem: "Número inválido. Por favor insira um número entre 1 e 12."
+Utiliza o que aprendeste SWITCH CASE sobre  para resolver este exercício.
+function mesesDoAno(m) {
+  let mes;
+  switch(m) {
+    case 1:
+      mes = "Janeiro";
+      break;
+    case 2:
+      mes = "Fevereiro";
+      break;
+    case 3:
+      mes = "Março";
+      break;
+    case 4:
+      mes = "Abril";
+      break;
+    case 5:
+      mes = "Maio";
+      break;
+    case 6:
+      mes = "Junho";
+      break;
+    case 7:
+      mes = "Julho";
+      break;
+    case 8:
+      mes = "Agosto";
+      break;
+    case 9:
+      mes = "Setembro";
+      break;
+    case 10:
+      mes = "Outubro";
+      break;
+    case 11:
+      mes = "Novembro";
+      break;
+    case 12:
+      mes = "Dezembro";
+      break;
+    default:
+      mes = "Número inválido. Por favor insira um número entre 1 e 12.";
+  }
+  return mes;
+}
+###########################################################################
