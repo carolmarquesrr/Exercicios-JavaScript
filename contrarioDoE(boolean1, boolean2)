@@ -1,0 +1,16 @@
+Cria uma função que recebe como argumentos dois booleanos e que retorna false se ambos forem true.
+
+E retorna true em todos os outros casos.
+
+Utiliza o que aprendeste sobre  para resolver este exercício.
+
+Exemplo de Output: ontrarioDoE     (true, true) // false
+
+
+
+function contrarioDoE(boolean1, boolean2) {
+    // escreve aqui a função
+    return boolean1 && boolean2 ? false : true;
+}
+
+ 
