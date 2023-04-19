@@ -1,0 +1,5 @@
+  Cria uma função que recebe um nome e uma idade como argumentos e retorna a frase "O meu nome é ... e tenho ... anos." .
+
+Utiliza STRINGS  para resolver este exercício.  function retornaNomeEIdade(nome, idade) {
+    // escreve aqui a função
+}    //retornaNomeEIdade("Maria", 50 ),// "O meu nome é Maria e tenho 50 anos."
