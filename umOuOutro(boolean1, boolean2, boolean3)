@@ -1,0 +1,9 @@
+ function umOuOutro(boolean1, boolean2, boolean3) {
+    // escreve aqui a função
+}
+function umOuOutro(boolean1, boolean2, boolean3) {
+    const numTrue = [boolean1, boolean2, boolean3].filter((b) => b === true).length;
+    return numTrue === 1;
+  }
+  
+  console.log(umOuOutro(true, true, false));  
