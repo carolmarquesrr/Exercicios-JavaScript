@@ -1,0 +1,15 @@
+Cria uma função que recebe dois inteiros como argumentos e calcula o resultado de elevar o primeiro ao segundo.
+
+Utiliza o que aprendeste sobre BIGINT  para resolver este exercício.
+
+
+function umElevadoAoOutro(um, outro) {
+  //transforme em bigint
+const primeiro = BigInt(um);
+const segundo = BigInt(outro);
+return primeiro**segundo;
+
+
+
+   return Math.pow(um, outro);
+}  
