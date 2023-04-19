@@ -1,0 +1,11 @@
+Cria uma função que recebe duas strings como argumentos e retorna a concatenação 
+dessas strings separadas por um espaço.
+
+Utiliza o que aprendeste sobre  para resolver este exercício.
+
+  function concatenaStrings(string1, string2) {
+    let sTrings = string1 + " "+ string2;
+    return sTrings;
+  }
+  
+  console.log(concatenaStrings("A vida é ", "bela!"));
