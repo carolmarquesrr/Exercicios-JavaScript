@@ -1,3 +1,18 @@
+Cria uma função que recebe como argumento uma idade e retorna a faixa etária.
+
+Até aos 11 anos (inclusive) - Criança
+
+Entre os 12 e os 17 anos (inclusive) - Adolescente
+
+Entre os 18 e os 64 anos (inclusive) - Adulto
+
+Mais de 65 anos (inclusive) - Sénior
+
+Utiliza o que aprendeste sobre IF ELSE  para resolver este exercício.
+
+
+
+
 function calculaFaixaEtaria(idade) {
   if (idade <= 11) {
     return "Criança";
