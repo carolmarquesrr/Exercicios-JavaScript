@@ -1,0 +1,21 @@
+Cria uma função que recebe dois comprimentos (das bases) 
+e a altura de um trapézio isósceles como argumentos e calcula o perímetro desse trapézio.
+
+Utiliza o que aprendeste sobre  para resolver este exercício.
+
+
+function perimeTroDoTrapezio(comprimento
+, comprimentoMenor, altura)
+    const ladoInclinado = Math.sqrt
+    (((comprimentoMaior - comprimentoMenor)
+     / 2) ** 2 + altura ** 2);
+    const perimetro = 
+    comprimentoMaior + comprimentoMenor
+     + 2 * ladoInclinado;
+    
+    return perimetro;
+    }
+    
+    // Exemplo de uso:
+    console.log(perimetroDoTrapezio(6, 4, 3)); // Retorna 16.48528137423857} 
+    
