@@ -1,0 +1,11 @@
+Cria uma função que recebe como argumentos dois booleanos e que retorna true se um, e apenas um, deles for true.
+
+Utiliza o BOOLEAN para resolver este exercício.
+
+Exemplo de Output: umOuOutro(true, true) // false
+
+function umOuOutro(boolean1, boolean2) {
+    return (boolean1 && !boolean2) || (!boolean1 && boolean2);
+  }
+  
+  console.log(umOuOutro(true, true)); // false  
