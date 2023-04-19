@@ -1,0 +1,34 @@
+function trimestresDoAno(t) {
+   primeiroTri = ["1 - Janeiro, Fevereiro, Março"]
+   segundoTri= ["2 - Abril, Maio, Junho"],
+   terceiroTri= ["3 - Julho, Agosto, Setembro"],
+   quartoTri= ["4 - Outubro, Novembro, Dezembro"]
+   
+    switch(t) {
+        case 1:
+        t = primeiroTri;
+        break;
+
+        case 2:
+        t = segundoTri;
+        break;
+
+        case 3:
+        t = terceiroTri;
+        break;
+
+        case 4:
+        t = quartoTri;
+        break;
+
+        default: t = "Número inválido. Por favor insira um número entre 1 e 4."
+
+     return t;
+  }
+}
+
+console.log(trimestresDoAno(1));
+console.log(trimestresDoAno(2));
+console.log(trimestresDoAno(3));
+console.log(trimestresDoAno(4));
+console.log(trimestresDoAno(5)); //"Por favor insira um numero entre 1 e 4." 
