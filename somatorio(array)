@@ -1,0 +1,6 @@
+function somatorio(array){
+    // escreve aqui a função
+    let initial= 0;
+    let soma = array.reduce((acc,cur) => acc + cur, initial);
+return soma;
+}
