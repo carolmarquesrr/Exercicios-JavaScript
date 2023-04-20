@@ -1,0 +1,21 @@
+Cria uma função e retorna um array com os numeros pares de 0 a N. 
+
+caso o numero seja inválido, return "Por favor insira um número superior a 0.";
+
+usar RECURSÃO para resolver
+Exemplo de Output: paresDeZeroAN(4) // [0,2,4] */ 
+
+
+function paresDeZeroAN(n){
+    if (n <= 0) {
+      return "Por favor insira um número superior a 0.";  
+    } else if (n===2) {
+        return [0,2];
+    } else {
+        let pares = paresDeZeroAN(n-1);
+        if (n % 2 === 0) {
+            pares.push(n);
+        }
+        return pares;
+    }
+}
