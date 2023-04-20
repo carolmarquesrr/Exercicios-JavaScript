@@ -1,0 +1,19 @@
+Cria uma função que recebe um array de datas como argumento e retorna a data mais antiga.
+
+Utiliza o que aprendeste sobre DATE  para resolver este exercício.
+
+
+
+function dataMaisAntiga(datas) {
+    let dataMaisAntiga = new Date(datas[0]);
+    
+    for (let i = 1; i < datas.length; i++) {
+      const dataAtual = new Date(datas[i]);
+      
+      if (dataAtual < dataMaisAntiga) {
+        dataMaisAntiga = dataAtual;
+      }
+    }
+    
+    return dataMaisAntiga;
+  }`
