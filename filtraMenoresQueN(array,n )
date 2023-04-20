@@ -1,0 +1,16 @@
+Cria uma função que recebe um array e um número como argumentos e retorna um array com os elementos que são menores que n.
+
+Utiliza o que aprendeste sobre FILTER  para resolver este exercício.
+
+Exemplo de Output:  filtraMenosQueN ([1,2,3,4], 2) // [1]
+
+
+
+
+function filtraMenoresQueN(array, n){
+    return array.filter(function(elemento){
+        return elemento < n;
+    });
+      
+} 
+console.log(filtraMenoresQueN([1,2,3,4], 2)) // [1]
