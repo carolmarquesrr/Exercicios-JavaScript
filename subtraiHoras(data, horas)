@@ -1,0 +1,19 @@
+/*
+Cria uma função que recebe uma data e um número de horas como 
+argumentos e retorna uma nova data resultante da subtração.
+
+Utiliza o que aprendeste sobre DATE para resolver este exercício.
+
+*/
+
+
+function subtraiHoras(data, horas) {
+
+    const dataEmMS = new Date (data).valueOf()
+    const msNumDia = 3600000
+  
+      return new Date(dataEmMS - (horas * msNumDia))
+    
+  }
+  
+  console.log(subtraiHoras('2023-04-2023', 2)) 
