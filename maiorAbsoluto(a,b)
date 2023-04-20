@@ -1,0 +1,14 @@
+function maiorAbsoluto(a, b){
+    
+if (Math.abs(a) === Math.abs(b)) {
+        return "Introduza dois valores diferentes." ;
+}   else if ( Math.abs(a) > Math.abs(b)) {
+        return Math.abs(a);
+    } else {
+         return Math.abs(b);
+} 
+}  console.log(maiorAbsoluto(6,5));
+ console.log(maiorAbsoluto(6,6));
+ console.log(maiorAbsoluto(1,5));
+
+//retornar o maior valor absoluto
