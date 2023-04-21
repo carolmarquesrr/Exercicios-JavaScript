@@ -1,0 +1,45 @@
+Implementa a classe , lembra-te que deve seguir as regras . FIRST IN FIRST OUT 
+
+A classe deve ter três métodos:
+
+ADICIONAR , recebe um elemento como argumento e insere-o na Fila.
+REMOVER, remove o elemento da frente da Fila, caso a Fila esteja vazia, retorna "Fila vazia!"
+OBTER ELEMENTO, retorna o elemento que esteja na frente da Fila, caso a Fila esteja vazia, retorna "Fila vazia!"
+; */ 
+class Fila {
+    constructor() {
+        this.items = [];
+    }
+
+    adicionar(elemento) {
+        this.items.push(elemento);
+    }
+    remover(){
+        if (this.estaVazia()) {
+            return "Fila vazia!";
+        }
+        return this.items.shift();
+    }
+
+    obterElemento() {
+        if (this.estaVazia()) {
+            return "Fila vazia!";
+        }
+        return this.items[0];
+    }
+    estaVazia() {
+        return this.items.length === 0;
+    }
+};
+
+const fila = new Fila();
+fila.adicionar("A");
+fila.adicionar("B");
+fila.adicionar("C");
+console.log(fila.obterElemento()); // "A"
+console.log(fila.remover()); // "A"
+console.log(fila.obterElemento()); // "B"
+console.log(fila.estaVazia()); // false
+console.log(fila.remover()); // "B"
+console.log(fila.remover()); // "C"
+console.log(fila.remover()); // "Fila vazia!"
