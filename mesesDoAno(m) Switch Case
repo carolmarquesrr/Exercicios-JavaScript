@@ -1,0 +1,56 @@
+function mesesDoAno(m) { //funçao
+   
+   let meses = ['Janeiro',
+       'Fevereiro',
+       'Março',
+       'Abril',
+       'Maio',
+       'Junho',
+       'Julho',
+       'Agosto',
+       'Setembro',
+       'Outubro',
+       'Novembro',
+       'Dezembro'];
+
+       switch (m) {
+           case 1:
+           return meses[0];
+       
+           case 2:
+           return meses[1];
+       
+           case 3:
+           return meses[2];
+       
+           case 4:
+           return meses[3];
+       
+           case 5:
+           return meses[4];
+       
+           case 6:
+           return meses[5];
+       
+           case 7:
+           return meses[6];
+       
+           case 8:
+           return meses[7];
+       
+           case 9:
+           return meses[8];
+       
+           case 10:
+           return meses[9];
+       
+           case 11:
+           return meses[10];
+       
+           case 12:
+           return meses[11];
+           default:
+           return "Número inválido. Por favor insira um número entre 1 e 12."
+       }
+ }
+ 
