@@ -1,0 +1,14 @@
+function filtraInteiros(array){
+
+if(array.length === 0) {
+    return [];
+}
+
+const rest = filtraInteiros(array.slice(1));
+
+    if (Number.isInteger(array [0])) {
+        return[array[0], ...rest];
+    } else {
+        return rest;
+    }
+} // utilizar o FILTER ok, agr.. 
