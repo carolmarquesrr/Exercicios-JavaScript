@@ -1,0 +1,13 @@
+function arrayDeNAZero(n){
+ if (n === 0) {
+     return "Por favor insira um número superior a 0."
+ } else {
+     let arr= [];
+     for (let i= 0; i <= n; i++){
+         arr.push(n - i);
+     }
+     return arr;
+}
+ }
+
+console.log(arrayDeNAZero(4)); // output deve ser [4,3,2,1,0]
