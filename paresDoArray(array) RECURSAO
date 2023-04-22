@@ -1,0 +1,15 @@
+function paresDoArray(array){
+
+    if (array.length === 0) {
+        return[];
+    }
+  const rest = paresDoArray(array.slice(1));
+
+  if(array[0] % 2 === 0) {
+      return [array[0], ...rest]
+  } else {
+      return rest
+  }
+}
+//ENcontar pares e utilizar recursao
+//se o resto da divisao por 2 for 0 e o output me mostrar os pares deste array com recursao
