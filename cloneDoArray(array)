@@ -1,0 +1,24 @@
+function cloneDoArray(array){
+
+if( array.length === 0) {
+    return[];
+}
+
+let clone = array.slice([]);
+let copia = clone;
+
+
+  return copia
+
+} 
+
+const arr = [1,2,3,4];
+const arrClone = cloneDoArray(arr);
+console.log(arrClone)
+
+
+ //output deveria ser [1,2,3]
+
+
+ // ARRAY e quero repeti lo
+    // escreve aqui a função
