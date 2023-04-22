@@ -1,0 +1,57 @@
+QUASE CERTO ... 
+
+
+const horasPorExtenso = [
+  "meia-noite",
+  "uma",
+  "duas",
+  "três",
+  "quatro",
+  "cinco",
+  "seis",
+  "sete",
+  "oito",
+  "nove",
+  "dez",
+  "onze",
+  "meio-dia"
+];
+function horaPorExtenso(data) {
+  const horas = data.getUTCHours();
+  const minutos = data.getMinutes();
+
+  const horasPorExtenso = [
+    "meia-noite",
+    "uma",
+    "duas",
+    "três",
+    "quatro",
+    "cinco",
+    "seis",
+    "sete",
+    "oito",
+    "nove",
+    "dez",
+    "onze",
+    "meio-dia"
+  ];
+
+  const minutosPorExtenso = [
+    "",
+    "um quarto",
+    "meia",
+    "três quartos",
+  ];
+
+  let horasExtenso = horasPorExtenso[horas % 12];
+  let minutosExtenso = minutosPorExtenso[Math.floor(minutos / 15)];
+
+  if (minutosExtenso) {
+    console.log(`São ${horasExtenso} e ${minutosExtenso}.`);
+  } else {
+    console.log(`São ${horasExtenso} em ponto.`);
+  }
+}
+
+horaPorExtenso(new Date("2021-05-17 09:00")); // nove horas em ponto
+horaPorExtenso(new Date("2021-05-17 09:00")); // nove horas em ponto 
