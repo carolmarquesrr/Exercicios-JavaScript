@@ -1,0 +1,33 @@
+function diaEmPalavras(dia, mes, ano){
+  const numerosPorExtenso = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezasseis', 'dezassete', 'dezoito', 'dezanove', 'vinte', 'vinte e um', 'vinte e dois', 'vinte e três', 'vinte e quatro', 'vinte e cinco', 'vinte e seis', 'vinte e sete', 'vinte e oito', 'vinte e nove', 'trinta', 'trinta e um'];
+  const mesesPT = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+
+  const date = new Date(ano, mes - 1, dia);
+  const diaInt = date.getDate();
+  const mesIndex = date.getMonth();
+  const anoInt = date.getFullYear();
+
+  if (isNaN(diaInt) || diaInt < 1 || diaInt > 31) {
+    return 'Por favor introduza um dia entre 1 e 31.';
+  } else if (isNaN(mesIndex) || mesIndex < 0 || mesIndex > 11) {
+    return 'Por favor introduza um mês entre 1 e 12.';
+  } else if (mesIndex === 3 || mesIndex === 5 || mesIndex === 8 || mesIndex === 10) {
+    if (diaInt < 1 || diaInt > 30) {
+      return 'Por favor introduza um dia entre 1 e 30.';
+    }
+  } else if (mesIndex === 1 && (diaInt < 1 || diaInt > 29) && (!(anoInt % 4 === 0 && (anoInt % 100 !== 0 || anoInt % 400 === 0)))) {
+    return 'Por favor introduza um dia entre 1 e 28.';
+  } else if (diaInt < 1 || diaInt > 31) {
+    return 'Por favor introduza um dia entre 1 e 31.';
+  }
+
+  if (isNaN(anoInt) || anoInt < 2000 || anoInt >= 2030) {
+    return 'Por favor introduza um ano entre 2000 e 2030.';
+  }
+
+  const diaStr = numerosPorExtenso[diaInt];
+  const mesStr = mesesPT[mesIndex];
+  const anoStr = `dois mil e ${numerosPorExtenso[anoInt % 100]}`;
+
+  return `${diaStr} de ${mesStr} de ${anoStr}`;
+}
