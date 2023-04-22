@@ -1,0 +1,16 @@
+function contaInteirosDoArray(array){
+   
+   if (array.length === 0) {
+       return 0;
+   }
+
+   const rest = contaInteirosDoArray(array.slice(1));
+   if (Number.isInteger(array[0])) {
+       return 1 + rest;
+   } else {
+       return rest;
+   }
+
+}
+
+//msm exercicio, porem agr sao N inteiros. 
