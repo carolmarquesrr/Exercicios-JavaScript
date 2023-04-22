@@ -1,10 +1,8 @@
-AINDA TEM ERROS E NAO FUNCIONA CORRETAMENTE 
-
 function horaPorExtenso(data){
-        const date = new Date(data);
+  const date=new Date(data)
         const hours = date.getUTCHours();
         const mins =date.getMinutes()
-        console.log('new Date:'+date)
+        console.log('NOVADATA:'+date)
         console.log(hours)
         console.log(mins)
         
@@ -33,7 +31,8 @@ function horaPorExtenso(data){
         21:'vinte e uma',
         22:'vinte e duas', 
         23:'vinte e três',
-        24:'vinte e quatro'};
+        24:'vinte e quatro'
+        };
         
       const m = {
         0:'em ponto',
@@ -97,20 +96,11 @@ function horaPorExtenso(data){
         58:'cinquenta e oito',
         59:'cinquenta e nove'
       };
-
-        let horaStr = "";
-
-  if (mins == 0) {
-    horaStr = h[hours] + ' ' + m[mins];
-  } else if (mins == 45) {
-    horaStr = 'um quarto para as ' + h[(hours + 1) % 24];
-  } else if (mins < 30) {
-    horaStr = h[hours] + ' e ' + m[mins] + ' minutos';
-  } else if (mins == 15) {
-    horaStr = h[hours] + ' e um quarto';
-  } else if (mins > 30) {
-    horaStr = m[60 - mins] + ' para as ' + h[(hours + 1) % 24];
-  } 
-  return horaStr;
-} console.log(horaPorExtenso(new Date("2021-05-17 09:00")))
-console.log(horaPorExtenso(new Date("2021-05-17 09:15")))
+let hr=''
+    if (mins==30||mins==15){
+    return h[hours]+' '+m[mins] }
+    else{
+        return h[hours]+' e ' +m[mins] }   
+    }
+console.log(horaPorExtenso(new Date("2021-05-17 09:00")));
+console.log(horaPorExtenso(new Date("2021-05-17 09:15")));
