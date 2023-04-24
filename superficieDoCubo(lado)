@@ -1,0 +1,5 @@
+function superficieDoCubo(lado){
+    return 6 * lado **2;
+    
+    // sao 6 lados, entao pra calcular a area da superficie, é 6lados * lado **2 pra saber 
+}
