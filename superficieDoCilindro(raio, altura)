@@ -1,0 +1,13 @@
+Cria uma função que recebe o raio e a altura como argumentos e calcula a área da superfície de um cilindro.
+
+
+
+function superficieDoCilindro(raio, altura){
+
+ const areaBase = Math.PI * Math.pow(raio,2);
+ const areaLateral = 2* Math.PI * raio * altura;
+ const areaTotal = 2* areaBase + areaLateral;
+ return areaTotal;
+}
+
+ 
