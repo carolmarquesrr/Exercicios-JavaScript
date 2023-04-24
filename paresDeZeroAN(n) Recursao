@@ -1,0 +1,15 @@
+function paresDeZeroAN(n){
+    // escreve aqui a função
+
+    if (n<= 0){
+        return "Por favor insira um número superior a 0."
+    }
+    const resultado = [];
+
+    for (let i = 0; i <= n; i++) {
+        if (i % 2 === 0) {
+            resultado.push(i);
+        }
+    }
+    return resultado;
+}
