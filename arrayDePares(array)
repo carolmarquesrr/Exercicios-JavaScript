@@ -1,0 +1,14 @@
+function arrayDePares(array){
+    // escreve aqui a função
+
+    if (array.length === 0){
+        return[];
+    }
+    const rest = arrayDePares(array.slice(1));
+
+    if (array[0] % 2 === 0){
+        return[array[0], ...rest]
+    } else {
+        return rest
+    }
+}
