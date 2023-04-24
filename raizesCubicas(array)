@@ -1,0 +1,10 @@
+function raizesCubicas(array){
+    // escreve aqui a função
+    let resultado = [];
+    for (let i = 0; i < array.length; i++) {
+        resultado.push(Math.cbrt(array[i]));
+    }
+}
+
+
+// output deve ser raizesCubicas(1,8,27,64) // 1,2,3,4
