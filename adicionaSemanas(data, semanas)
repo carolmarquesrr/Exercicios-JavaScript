@@ -1,0 +1,23 @@
+Cria uma função que recebe uma data e um número de semanas como 
+argumentos e retorna uma nova data resultante da soma.
+
+
+function adicionaSemanas(data, semanas) {
+    // escreve aqui a função
+    let dataMilisegundos = data.getTime();
+    let semanasMil = semanas * 7 * 24 * 60 * 60 * 1000;
+    let novaDataMil = dataMilisegundos + semanasMil;
+    let novaData = new Date (novaDataMil);
+    return novaData;
+}
+
+
+
+const dataInicial = new Date('2022-05-01');
+const semanasParaAdicionar = 4;
+
+const novaData = adicionaSemanas(dataInicial, semanasParaAdicionar);
+
+console.log(`Data inicial: ${dataInicial}`);
+console.log(`Semanas para adicionar: ${semanasParaAdicionar}`);
+console.log(`Nova data: ${novaData}`);
