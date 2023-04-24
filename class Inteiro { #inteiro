@@ -1,0 +1,44 @@
+class Inteiro {
+    #inteiro
+    
+    constructor(inteiro) {
+        if (typeof inteiro === 'number' && !Number.isNaN(inteiro)) {
+            this.#inteiro = Math.floor(inteiro)
+        } else {
+            this.#inteiro = 0
+        }
+    }
+
+    get valor() {
+        return this.#inteiro;
+    }
+    
+    set valor(nv) {
+        if (Number.isNaN(Number(nv))) {
+            this.#inteiro = this.#inteiro ? this.#inteiro : -1;
+        } else {
+            this.#inteiro = Math.floor(nv);
+        }
+    }
+}
+ 
+ 
+ 
+ 
+ 
+const meuInteiro = new Inteiro(5.5);
+console.log(meuInteiro.valor); // 6
+
+meuInteiro.valor = "7.3";
+console.log(meuInteiro.valor); // 7
+
+meuInteiro.valor = "foo";
+console.log(meuInteiro.valor); // 7 (valor anterior é mantido)
+
+
+//encontra 
+// deve ser possivel aceder e alterar a propriedade Valor garantindo as regras acima
+// Se o Valor estiver definido e for passado um  novo valor inválido, deve manter se o valor anterior. 
+// deves utilizar o # para marcar a propriedade privada e implementar o get e o set. As regras podem ser garantidas na implementação do set. 
+
+
