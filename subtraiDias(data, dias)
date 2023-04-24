@@ -14,3 +14,20 @@ function subtraiDias(data, dias) {
     console.log(dataEmSegundos-day)
     return new Date(dataEmSegundos - day)
 }
+
+
+
+function subtraiDias(data, dias) {
+    // escreve aqui a função
+    console.log(data)
+    let horas = 24 * 60 * 60 * 1000
+
+    let dataEmSegundos = data.valueOf()
+    console.log(dataEmSegundos)
+
+    let day = horas * dias
+    console.log(day)
+    return new Date(dataEmSegundos - day)
+}
+
+
