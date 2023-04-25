@@ -1,0 +1,18 @@
+function diferencaAbsolutaEntreDiagonais(matrizquadrada) {
+
+    let diagonalPrincipal = 0;
+    let diagonalSecundaria = 0;
+
+    for (let i = 0; i < matrizquadrada.length; i++) {
+        const linha = matrizquadrada[i]
+        const valorDaDiagonalPrincipal = linha[i]
+        const valorDaDiagonalSecundaria = linha[linha.length - 1 - i]
+
+        diagonalPrincipal += valorDaDiagonalPrincipal
+        diagonalSecundaria += valorDaDiagonalSecundaria
+
+    }
+
+    const diferenca = diagonalPrincipal - diagonalSecundaria
+    return Math.abs(diferenca)
+}
