@@ -1,0 +1,5 @@
+function arraySemN(n, array){
+   const semN = array.filter(numero => numero !== n )
+   return semN
+
+}
