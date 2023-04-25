@@ -1,0 +1,24 @@
+Cria uma função que recebe um array de duas dimensões, 
+uma matriz quadrada como argumento e calcula a o valor da diferença entre
+a soma da diagonal principal (começa no canto superior esquerdo e termina 
+no canto inferior direito) e a soma da diagonal secundária 
+(começa no canto superior direito e termina no canto inferior esquerdo).
+
+
+
+function diferencaEntreDiagonais(matrizquadrada) {
+
+    let diagonalPrincipal = 0; //as diagonais principais 
+
+    for (let i = 0; i < matrizquadrada.length; i++) {
+
+        diagonalPrincipal += matrizquadrada[i][i];
+        diagonalPrincipal -= matrizquadrada[i][matrizquadrada.length -1 - i];
+    }
+
+    return diagonalPrincipal;
+} 
+console.log(diferencaEntreDiagonais(
+    [[1,2,3],
+    [1,2,3],
+    [1,2,3]]))    // OUTPUT 0
