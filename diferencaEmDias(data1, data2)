@@ -1,0 +1,11 @@
+function diferencaEmDias(data1, data2) {
+    // escreve aqui a função
+
+    const secondsDay = 24 * 60 *60 * 1000;
+    const time1 = new Date(data1).getTime();
+    const time2 = new Date(data2).getTime();
+    const difeSeconds = Math.abs(time2 - time1);
+    const diferencaEmDias = Math.floor(difeSeconds / secondsDay);
+    return diferencaEmDias;
+}
+
