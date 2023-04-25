@@ -1,0 +1,11 @@
+function dataMaisRecente(data1, data2) {
+    let dataMaisRecente = new Date(data1);
+    let data2o = new Date(data2)
+
+   // data mais recente é a que tem menor diferença com hoje
+    if (data2o > dataMaisRecente){
+        dataMaisRecente = data2o;
+    }
+  return dataMaisRecente;
+    }   
+
