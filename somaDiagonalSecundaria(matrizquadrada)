@@ -1,0 +1,9 @@
+function somaDiagonalSecundaria(matrizquadrada) {
+    // escreve aqui a função
+
+    let soma = 0;
+    for (let i = 0; i < matrizquadrada.length; i++){
+        soma += matrizquadrada[i][matrizquadrada.length - i - 1];
+    }
+    return soma;
+}
