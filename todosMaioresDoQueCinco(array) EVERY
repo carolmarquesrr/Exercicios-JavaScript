@@ -1,0 +1,12 @@
+
+Cria uma função que recebe um array como argumento e verifica se todos os elementos são maiores que 5.
+
+Utiliza o que aprendeste EVERY sobre o  para resolver este exercício.
+
+
+function todosMaioresDoQueCinco(array){
+
+      return array.every((element) => element >= 5);
+}
+
+//console.log(array[1,2,3,4]) //todosMaioresDoQueCinco // false
