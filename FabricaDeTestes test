@@ -1,0 +1,24 @@
+class FabricaDeTestes {
+    constructor(_testes) {
+        this.testes = _testes
+    }
+    testar(_func) {
+    let testesPassados = 0
+    };
+
+
+}
+const testes = [
+    {argumentos: [3, 2] , resultadoEsperado: 5, nome: "Soma 3 e 2"},
+    {argumentos: [x, y] , resultadoEsperado: 5, nome: "Soma x e y"},
+    {argumentos: [z, x] , resultadoEsperado: 5, nome: "Soma 3 e 2"}
+]
+
+function qualquerCoisa (a,b) {
+
+}
+const fabrica = new FabricaDeTestes(testes)
+console.log(fabrica)
+fabrica.testar(qualquerCoisa)
+
+Procurar isso nos arquivos do Rafa. Github/Discord
