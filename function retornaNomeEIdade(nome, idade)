@@ -3,3 +3,11 @@
 Utiliza STRINGS  para resolver este exercício.  function retornaNomeEIdade(nome, idade) {
     // escreve aqui a função
 }    //retornaNomeEIdade("Maria", 50 ),// "O meu nome é Maria e tenho 50 anos."
+
+
+function retornaNomeEIdade(nome, idade) {
+   return `O meu nome é ${nome} e tenho ${idade} anos.`;
+}
+console.log(retornaNomeEIdade("Maria",50));
+
+  // Output: O meu nome é Maria e tenho 25 anos.
