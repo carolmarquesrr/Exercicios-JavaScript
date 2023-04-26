@@ -1,0 +1,22 @@
+Implementa a função  que recebe dois arrays e
+retorna o resultado de combinar os dois arrays, 
+alternando os seus elementos.
+
+function combineArrays 
+combineArrays(["a", "b", "c"], [1,2,3]) // ["a",1, "b", 2, "c", 3]
+combineArrays(["a", "b", "c"], [1]) // ["a", 1, "b","c"]
+
+
+function combineArrays(array1, array2) {
+  const combined = [];
+  const maxLength = Math.max(array1.length, array2.length);
+  for (let i = 0; i < maxLength; i++) {
+    if (i < array1.length) {
+      combined.push(array1[i]);
+    }
+    if (i < array2.length) {
+      combined.push(array2[i]);
+    }
+  }
+  return combined;
+}
