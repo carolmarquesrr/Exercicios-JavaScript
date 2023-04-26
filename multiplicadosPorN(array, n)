@@ -1,0 +1,6 @@
+function multiplicadosPorN(array, n){
+    // escreve aqui a função
+    return array.map(function(elemento){
+        return elemento * n;
+    });
+}
