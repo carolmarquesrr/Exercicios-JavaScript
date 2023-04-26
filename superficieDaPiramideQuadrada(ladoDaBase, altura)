@@ -1,0 +1,14 @@
+function superficieDaPiramideQuadrada(ladoDaBase, altura) {
+  
+  
+let hipo = Math.sqrt((ladoDaBase/2)**2 + altura ** 2);
+let areaBase = ladoDaBase ** 2;
+let areaLateral = ladoDaBase * hipo /2 ;
+
+return areaBase + (areaLateral*4); 
+
+}
+
+
+
+console.log(superficieDaPiramideQuadrada(8,5))
