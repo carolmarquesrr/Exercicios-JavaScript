@@ -1,0 +1,19 @@
+function valorMaximoImpar(array){
+
+  // criar um novo array contendo apenas os valores ímpares
+  
+  let arrayImpar = array.filter((valor) => valor % 2 === 1);
+
+  // encontrar o valor máximo do novo array usando reduce
+  
+  let valorMax = arrayImpar.reduce((max, current) => {
+    return Math.max(max, current);
+  }, 0);
+  
+  return valorMax;
+}
+
+
+       
+
+console.log(valorMaximoImpar([1,2,3,4])) output deve ser 3
