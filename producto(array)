@@ -1,0 +1,21 @@
+Cria a função producto que recebe como argumento um array de inteiros
+
+A função deve retornar um array em que cada posição do array deve ser o produto de todos os outros valores do array excluindo o próprio.
+
+
+function producto(array) {
+  const n = array.length;
+  const output = [];
+
+  for (let i = 0; i < n; i++) {
+    let produto = 1;
+    for (let j = 0; j < n; j++) {
+      if (i !== j) {
+        produto *= array[j];
+      }
+    }
+    output.push(produto);
+  }
+
+  return output;
+}
