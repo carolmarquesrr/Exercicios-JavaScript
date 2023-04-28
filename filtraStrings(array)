@@ -1,0 +1,6 @@
+function filtraStrings(array) {
+
+
+return array.filter(palavra=>typeof palavra==='string')
+
+}
