@@ -1,0 +1,33 @@
+function fatorialN(n){
+ let result = n;
+ if (n === 0 || n === 1)
+ return 1;
+ while (n > 1){
+     n --;
+     result = result * n;
+ } return result;
+}
+console.log(fatorialN(4))
+
+
+function factorialN(n){
+    let fator = 1;
+    let i = 1;
+        while (i <=n){
+            fator *= i;
+            ++i;
+        }
+        return fator;
+} 
+
+console.log(factorialN(4))
+
+function factorialN(n) {
+  let fator = BigInt(1); // initialize fator as a BigInt with value 1
+  let i = BigInt(1); // initialize i as a BigInt with value 1
+  while (i <= BigInt(n)) { // convert n to a BigInt and compare with i
+    fator *= i;
+    i += BigInt(1); // increment i by a BigInt value of 1
+  }
+  return fator;
+}
