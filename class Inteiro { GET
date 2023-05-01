@@ -1,0 +1,19 @@
+class Inteiro {
+  #valor; // propriedade privada para armazenar o valor inteiro
+
+  constructor(valor) {
+    // verifica se o valor passado é um número
+    if (typeof valor === "number" && !Number.isNaN(valor)) {
+      // se for um número, armazena apenas a parte inteira
+      this.#valor = Math.trunc(valor);
+    } else {
+      // caso contrário, atribui o valor 0
+      this.#valor = 0;
+    }
+  }
+
+  get valor() {
+    // retorna o valor armazenado na propriedade privada
+    return this.#valor;
+  }
+}
