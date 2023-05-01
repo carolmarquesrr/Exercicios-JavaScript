@@ -1,0 +1,7 @@
+function filtraMaioresQueN(array, n){
+    // escreve aqui a função
+    return array.filter(function(elemento){
+        return elemento > n;
+    });
+    
+} console.log(filtraMaioresQueN([1,2,3,4],5))
