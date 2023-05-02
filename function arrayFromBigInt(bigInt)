@@ -1,0 +1,15 @@
+Implementa a função arrayFromBigInt   que recebe um número inteiro de qualquer dimensão (bigInt) e retorna um array com cada dígito (Number) em separado.
+
+Exemplo: arrayFromBigInt(12345n) \\ [1,2,3,4,5
+]
+
+
+
+function arrayFromBigInt(bigInt) {
+    const digito = [];
+    while (bigInt > 0n) {
+        digito.unshift(Number(bigInt % 10n));
+        bigInt /= 10n;
+    }
+    return digito;
+}
