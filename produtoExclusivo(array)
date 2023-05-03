@@ -1,0 +1,24 @@
+function produtoExclusivo(array) {
+    // Escreve aqui a função
+
+    const n = array.length;
+    const output = [];
+
+    for (let i = 0; i < n; i++) {
+        let produto =1;
+        for (let j= 0; j < n; j++){
+            if (i !== j){
+                produto *= array[j];            }
+        }
+        output.push(produto);
+    }
+    return output;
+    
+}
+
+
+
+
+
+ console.log(produtoExclusivo([1,3,5])) 
+
