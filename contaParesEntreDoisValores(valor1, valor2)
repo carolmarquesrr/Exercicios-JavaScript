@@ -1,0 +1,16 @@
+function contaParesEntreDoisValores(valor1, valor2){
+   if 
+    (valor1 === valor2){
+    return "Por favor introduza dois valores diferentes.";
+    } 
+let contador = 0;
+const valorBaixo = Math.min(valor1,valor2);
+const valorAlto = Math.max(valor1, valor2);
+     for(let i= valorBaixo; i <= valorAlto;i++){  if ( i % 2 === 0 ){
+         contador ++;
+     }
+
+ }
+
+return contador;
+}
