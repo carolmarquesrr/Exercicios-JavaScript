@@ -26,6 +26,35 @@ class Inteiro {
  
  
  
+ OUTRA OPÇÃO, SEM O SET
+ 
+ class Inteiro {
+
+    #inteiro
+
+    constructor(inteiro) {
+        if (typeof inteiro === 'number' && !Number.isNaN(inteiro)) {
+        this.#inteiro = Math.floor(inteiro)
+        } else {
+            this.#inteiro = 0
+        }
+    }
+
+    get valor(){
+        return this.#inteiro
+        }
+    }
+
+const meuInteiro = new Inteiro(5.5);
+
+console.log(meuInteiro.valor);
+
+
+
+
+ 
+ 
+ 
 const meuInteiro = new Inteiro(5.5);
 console.log(meuInteiro.valor); // 6
 
