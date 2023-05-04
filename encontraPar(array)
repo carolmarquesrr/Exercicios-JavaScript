@@ -1,0 +1,6 @@
+function encontraPar(array) {
+  // RETORNAR O PRIMEIRO ELEMENTO PAR
+  return array.find(n => n % 2 === 0);
+}
+
+console.log(encontraPar([1, 2, 3, 4])); // output deve ser 2
