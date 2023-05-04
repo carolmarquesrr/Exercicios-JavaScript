@@ -1,7 +1,7 @@
 function dataPorExtenso(data) {
   const diasDaSemana = [
-    "Domingo", "Segunda-feira", "Terça-feira",
-    "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"
+    "domingo", "segunda-feira", "terça-feira",
+    "quarta-feira", "quinta-feira", "sexta-feira", "sábado"
   ];
   
   const meses = [
@@ -19,4 +19,4 @@ function dataPorExtenso(data) {
   return `${diaDaSemana}, ${dia} de ${mes} de ${ano}`;
 }
 
-console.log(dataPorExtenso(New Date))########
+console.log(dataPorExtenso(new Date(2022,03,04)));
