@@ -1,0 +1,8 @@
+function diaDoAno(data){
+   
+let primeiroDia = new Date(data.getFullYear(), 0, 1);
+let diferencaMs = data.getTime() - primeiroDia.getTime();
+let difencaDias = diferencaMs / (1000 * 60 * 60 * 24) + 1;
+
+   return Math.floor(difencaDias);
+} 
