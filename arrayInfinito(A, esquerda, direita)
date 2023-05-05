@@ -1,0 +1,13 @@
+function arrayInfinito(A, esquerda, direita) {
+    if (!Array.isArray(A) || A.length === 0) {
+      return 0;
+    }
+  
+    let sum = 0;
+    for (let i = esquerda; i <= direita; i++) {
+      let index = i % A.length;
+      sum += A[index];
+    }
+  
+    return sum;
+  }
