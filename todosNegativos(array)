@@ -1,0 +1,7 @@
+Utiliza o que aprendeste EVERY sobre o  para resolver este exercício.
+
+
+function todosNegativos(array){
+
+      return array.every((element) => element >= 0);
+}
