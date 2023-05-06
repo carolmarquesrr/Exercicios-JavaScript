@@ -1,0 +1,16 @@
+function fatoriaisDoArray(array) {
+  // Função recursiva para calcular o fatorial
+  function fatorial(n) {
+    if (n <= 1) {
+      return 1;
+    } else {
+      return n * fatorial(n - 1);
+    }
+  } // Map  kd elemento do array para o seu fatorial
+
+  return array.map(function (x) {
+    return fatorial(x);
+  });
+}
+
+console.log(fatoriaisDoArray([1, 2, 3, 4])); //   
