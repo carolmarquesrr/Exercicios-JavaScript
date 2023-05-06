@@ -1,0 +1,4 @@
+function perimetroDoRectangulo(comprimento, largura) {
+  let perimetro = 2 *(comprimento+largura)
+  return perimetro
+}
