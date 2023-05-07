@@ -1,0 +1,11 @@
+function mapaDeOcorrencias(array) {
+  const ocorrencias = array.reduce((mapa, valorAtual) => {
+    if (mapa.has(valorAtual)) {
+      mapa.set(valorAtual, mapa.get(valorAtual) + 1);
+    } else {
+      mapa.set(valorAtual, 1);
+    }
+    return mapa;
+  }, new Map());
+  return ocorrencias;
+}
