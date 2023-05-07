@@ -1,0 +1,4 @@
+function existeNegativo(array){
+    // tenho que retornar algum utilizando some nos elementos do aray até achar numero menor que 0
+   return array.some((element) => element < 0 )
+}
