@@ -1,0 +1,13 @@
+function quadradosDoArray(array) {
+  const n = array.length;
+  const result = [];
+
+  for (let i = 0; i < n; i++) {
+    const quadrado = array[i] ** 2;
+    result.push(quadrado);
+  }
+
+  return result;
+}
+
+console.log(quadradosDoArray([1, 2, 3, 4])); // output deve ser [1, 4, 9, 16]
