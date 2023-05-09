@@ -2,3 +2,11 @@ function contaSuperioresAN(array, n){
    const novoArray = array.filter(numero => numero > n);
    return novoArray.length;
 }
+
+
+function contaSuperioresAN(array, n){
+    // escreve aqui a função
+    const novoArray= array.filter(numero => numero > n); 
+    //array novo. q filtra o elemento que é qualquer elemento maior que N 
+   return novoArray.length;
+}
