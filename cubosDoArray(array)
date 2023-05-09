@@ -1,0 +1,7 @@
+function cubosDoArray(array){
+   let cubo = [];
+   for (let i = 0; i < array.length; i++){
+       cubo.push(Math.pow(array[i],3));
+   }
+   return cubo; 
+}
