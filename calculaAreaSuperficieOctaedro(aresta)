@@ -1,0 +1,7 @@
+function calculaAreaSuperficieOctaedro(aresta) {
+  if (aresta <= 0) {
+    return "Por favor insira um valor positivo.";
+  }
+  const area = 2 * Math.sqrt(3) * Math.pow(aresta, 2);
+  return Math.round(are ) ;
+}
