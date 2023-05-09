@@ -1,0 +1,3 @@
+function todasPossuemLetra(array, letra) {
+  return array.every(palavra => palavra.includes(letra));
+}
