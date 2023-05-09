@@ -1,0 +1,15 @@
+function inverteArray(array) {
+  // Verifica se o array é vazio
+  if (array.length === 0) {
+    return [];
+  }
+  
+  // Cria uma cópia do array original
+  let invertido = array.slice();
+  
+  // Inverte a ordem dos elementos na cópia do array
+  invertido.reverse();
+  
+  // Retorna o array invertido
+  return invertido;
+}
