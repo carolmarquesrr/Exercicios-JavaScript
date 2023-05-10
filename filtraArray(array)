@@ -1,0 +1,6 @@
+function filtraArray(array){
+    // escreve aqui a função
+    return array.filter(element => element %2 !== 0)
+}
+
+filtraArray(array) DE NUMEROS IMPARES 
