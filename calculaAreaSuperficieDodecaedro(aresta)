@@ -1,0 +1,23 @@
+function calculaAreaSuperficieDodecaedro(aresta) {
+    if (aresta < 0) {
+        return "Por favor introduza um valor positivo.";
+    }
+
+    let base = aresta
+    let rad = 36 * Math.PI/180;
+    let altura = (base/ 2) / Math.tan(rad)
+let areaT = (base * altura) / 2
+let areaface = 5 * areaT
+
+return Math.round(12 * areaface)
+
+
+
+
+
+function calculaAreaSuperficieDodecaedro(aresta) {
+    // Escreve aqui o teu código
+    if (aresta<0){
+        return 'Por favor insira um valor positivo.' }
+    return Math.round(3*aresta**2*Math.sqrt(25+10*Math.sqrt(5)))
+}
