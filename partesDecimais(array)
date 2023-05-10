@@ -1,0 +1,11 @@
+Cria uma função que recebe um array como argumento e
+retorna um array com a parte decimal de cada elemento
+arredondada por defeito às centésimas.
+Utiliza o que aprendeste sobre o map para resolver este
+exercício.
+Exemplo de Output: partesDecimais([1.5, 2.4, 3.1,
+4.2]) // [0.5, 0.39, 0.1, 0.2] 
+
+function partesDecimais(array) {
+  return array.map(numero => parseFloat((numero - Math.floor(numero)).toFixed(2)));
+} NAO DEU CERTO!!!!!!!
