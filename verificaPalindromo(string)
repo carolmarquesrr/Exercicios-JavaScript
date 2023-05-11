@@ -1,0 +1,18 @@
+function verificaPalindromo(string) {
+    let indiceCentral = string.length / 2
+    let primeiraMetade = ""
+    let segundaMetade = ""
+
+    //Percorre do inicio ate ao centro da string para construir a primeira metade
+    for (let i = 0; i < indiceCentral; i++) {
+        primeiraMetade += string[i]
+    }
+    //Percorre do fim ate ao centro da string para construir a SEGUNDA metade
+     for (let i = string.length - 1; i >= indiceCentral - 0.5; i--) {
+        segundaMetade += string[i]
+    }
+
+
+  //compara a primeira com a segunda
+    return primeiraMetade.toUpperCase() === segundaMetade.toUpperCase()
+}
