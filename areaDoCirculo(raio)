@@ -1,0 +1,4 @@
+function areaDoCirculo(raio) {
+   let area = Math.PI*Math.pow(raio,2)
+   return area
+   }
