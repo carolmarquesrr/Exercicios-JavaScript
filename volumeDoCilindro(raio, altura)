@@ -1,0 +1,5 @@
+function volumeDoCilindro(raio, altura) {
+  const pi = Math.PI;
+  const volume = pi * raio ** 2 * altura;
+  return volume;
+}
