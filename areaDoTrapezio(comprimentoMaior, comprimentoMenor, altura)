@@ -1,0 +1,4 @@
+function areaDoTrapezio(comprimentoMaior, comprimentoMenor, altura) {
+  const area = (comprimentoMaior + comprimentoMenor) * altura / 2;
+  return area;
+}
