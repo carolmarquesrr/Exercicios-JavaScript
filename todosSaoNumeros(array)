@@ -1,0 +1,8 @@
+function todosSaoNumeros(array){
+return array.every(element => typeof element === Number)
+   
+    
+    
+}
+
+console.log(todosSaoNumeros([1,2,3,4]))
