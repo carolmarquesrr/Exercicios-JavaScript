@@ -1,0 +1,5 @@
+function perimetroTrapezio(comprimentoMaior, comprimentoMenor, altura) {
+  const lInclinado = Math.sqrt(altura ** 2 + ((comprimentoMaior - comprimentoMenor) / 2) ** 2);
+  const perimetro = comprimentoMaior + comprimentoMenor + 2 * lInclinado;
+  return perimetro;
+}
