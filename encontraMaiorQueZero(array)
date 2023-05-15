@@ -1,0 +1,3 @@
+function encontraMaiorQueZero(array){
+   return array.find(elemento => elemento > 0)
+}
