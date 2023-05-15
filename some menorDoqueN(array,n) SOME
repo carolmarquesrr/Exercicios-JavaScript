@@ -1,0 +1,3 @@
+function existeMenorDoQueN(array, n) {
+  return array.some(elemento => elemento < n);
+}
