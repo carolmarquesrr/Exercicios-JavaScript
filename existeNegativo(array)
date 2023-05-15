@@ -1,0 +1,3 @@
+function existeNegativo(array){
+  return array.some(elemento => elemento < 0)
+}
