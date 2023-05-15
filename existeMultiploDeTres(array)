@@ -1,0 +1,3 @@
+function existeMultiploDeTres(array){
+  return array.some(elemento => elemento %3 == 0)
+}
