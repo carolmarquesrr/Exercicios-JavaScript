@@ -1,0 +1,89 @@
+// Cria uma função que recebe uma data como argumento e a retorna o dia da semana por extenso.
+
+function diaDaSemanaPorExtenso(data) {
+    // escreve aqui a função
+    return data.toLocaleString('pt-PT', { weekday: 'long' })
+}
+
+
+function dataPorExtenso(data) {
+    let diaSemana = data.toLocaleString('pt-PT', { weekday: 'long' })
+    let dia = data.toLocaleString('pt-PT', { day: 'numeric' })
+    let mes = data.toLocaleString('pt-PT', { month: 'long' })
+    let ano = data.toLocaleString('pt-PT', { year: 'numeric' })
+
+    return ${diaSemana}, ${dia} de ${mes} de ${ano}`
+    
+   
+   
+   
+   
+ // Cria uma função que recebe uma data e uma língua como argumentos e a retorna o dia da semana por extenso.
+
+// As línguas suportadas são português (pt) e inglês (en)
+
+// Dias da semana em português: segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado e domingo.
+
+// Dias da semana em inglês: monday, tuesday, wednesday, thursday, friday, saturday, sunday.
+
+function diaDaSemanaPorExtensoBilingue(data, lingua) {
+
+    console.log(data, lingua)
+    if (lingua == 'pt') {
+        return data.toLocaleString('pt-PT', { weekday: 'long' })
+    }
+    if (lingua == 'en') {
+        console.log(data.toLocaleString('en-Us', { weekday: 'long' }))
+        return data.toLocaleString('en-US', { weekday: 'long' }).toLowerCase()
+    }
+} 
+
+
+ // Cria uma função que recebe uma data como argumento e a retorna o mês por extenso.
+
+function mesPorExtenso(data) {
+    // escreve aqui a função
+    return data.toLocaleString('pt-PT', { month: 'long' })
+} 
+ // Cria uma função que recebe uma data e uma língua como argumentos e a retorna o mês por extenso.
+
+// As línguas suportadas são português (pt) e inglês (en)
+
+// Meses em português - inglês:
+
+// Janeiro — January
+
+// Fevereiro — February
+
+// Março — March
+
+// Abril — April
+
+// Maio — May
+
+// Junho — June
+
+// Julho — July
+
+// Agosto — August
+
+// Setembro — September
+
+// Outubro — October
+
+// Novembro — November
+
+// Dezembro — December
+
+function mesPorExtensoBilingue(data, lingua) {
+    // escreve aqui a função
+    if (lingua == 'pt') {
+        let mes = data.toLocaleString('pt-PT', { month: 'long' })
+        return mes[0].toUpperCase() + mes.slice(1)
+    }
+    if (lingua == 'en') {
+        return data.toLocaleString('en-US', { month: 'long' })
+    }
+} 
+esses são os de data que eu não uso Mapa ou Array
+uso esse método toLocaleString()
