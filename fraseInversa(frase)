@@ -1,0 +1,40 @@
+unction fraseInversa(frase) {
+  // Separa a frase em um array de palavras
+  const palavras = frase.split(" ");
+
+  // Inverte a ordem do array de palavras
+  const palavrasInvertidas = palavras.reverse();
+
+  // Junta as palavras invertidas em uma string
+  const fraseInvertida = palavrasInvertidas.join(" ");
+
+  return fraseInvertida;
+}
+
+--------------------------------------------------------------------------------
+                    Explicação:.
+Nesta implementação, a função fraseInversa recebe uma string frase como argumento e a divide em um array de palavras usando o método split() com um espaço como separador.
+
+Em seguida, a ordem do array de palavras é invertida usando o método reverse(). 
+
+Finalmente, as palavras invertidas são unidas novamente em uma string usando o método join() com um espaço como separador. 
+
+A string resultante é a frase invertida e é retornada pela função.
+
+Para testar a função, basta chamar fraseInversa com diferentes frases como argumento:
+
+fraseInversa("Ola Mundo"); // retorna "Mundo Ola"
+fraseInversa("Buondi"); // retorna "Buondi"
+
+
+
+function fraseInversa(frase) {
+   
+   const palavras = frase.split(" "); //espaço dentro conta!!! 
+
+   const palavrasInv = palavras.reverse();
+
+   const fraseInv = palavrasInv.join(' ');//espaço dentro conta!!! 
+    return fraseInv
+}
+console.log(fraseInversa("Carol é um exemplo "))
