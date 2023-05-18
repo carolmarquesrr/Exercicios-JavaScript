@@ -1,0 +1,14 @@
+function adicionarJogada(jogo, linha, coluna) {
+  if (jogo.tabuleiro[linha][coluna] === ' ') {
+    return {
+      ...jogo,
+      tabuleiro: jogo.tabuleiro.map((l, i) =>
+        l.map((p, j) =>
+          i === linha && j === coluna ? jogo.jogadorAtual : p
+        )
+      ),
+      jogadorAtual: jogo.jogadorAtual === 'X' ? 'O' : 'X'
+    };
+  }
+  return jogo;
+}
