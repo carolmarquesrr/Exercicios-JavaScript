@@ -1,0 +1,8 @@
+THE CODE GAMES
+THE CODE GAME #546
+O próximo The Code Game começa em...
+
+
+function combineSortedArrays(arr1, arr2) {
+  return [...arr1, ...arr2].sort((a, b) => a - b);
+}
