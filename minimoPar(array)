@@ -1,0 +1,10 @@
+function minimoPar(array){
+    // escreve aqui a função
+    return array.reduce((mpar, el) => {
+        if (el % 2 === 0 && el < mpar){
+            return el;
+        } else {
+            return mpar;
+        }
+    } )
+}
