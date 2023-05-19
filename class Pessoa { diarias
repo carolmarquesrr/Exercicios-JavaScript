@@ -20,3 +20,33 @@ const pessoa1 = new Pessoa("Joao", 30, "m")
 const pessoa2 = new Pessoa("Maria", 25, "f")
 
 console.log(pessoa1.comparaIdade(pessoa2))
+
+############################################ OUTRA MANEIRA
+
+
+class Pessoa {
+  constructor(nome, idade, sexo) {
+    this.nome = nome;
+    this.idade = idade;
+    this.sexo = sexo;
+  }
+
+  comparaIdade(pessoa) {
+    if (pessoa.idade > this.idade) {
+      return `${this.getPrefixo(pessoa.sexo)} ${pessoa.nome} é mais velh${this.getSufixo(pessoa.sexo)} do que eu.`;
+    } else if (pessoa.idade < this.idade) {
+      return `${this.getPrefixo(pessoa.sexo)} ${pessoa.nome} é mais nov${this.getSufixo(pessoa.sexo)} do que eu.`;
+    } else {
+      return `${this.getPrefixo(pessoa.sexo)} ${pessoa.nome} é da mesma idade que eu.`;
+    }
+  }
+
+  getPrefixo(sexo) {
+    return sexo === "m" ? "O" : "A";
+  }
+
+  getSufixo(sexo) {
+    return sexo === "m" ? "o" : "a";
+  }
+}
+
