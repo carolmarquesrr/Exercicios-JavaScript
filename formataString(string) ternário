@@ -1,0 +1,9 @@
+function formataString(string) {
+  let novaString = "";
+  for (let i = 0; i < string.length; i++) {
+    novaString += string[i] === string[i].toUpperCase() ? string[i].toLowerCase() : string[i].toUpperCase();
+  }
+  return novaString;
+}
+
+console.log(formataString("Carol HpJF"));
