@@ -1,0 +1,9 @@
+function valorMaisAltoDoArray(array) {
+  let valorMaisAlto = array[0];
+  for (let i = 1; i < array.length; i++) {
+    valorMaisAlto = array[i] > valorMaisAlto ? array[i] : valorMaisAlto;
+  }
+  return valorMaisAlto;
+}
+
+console.log(valorMaisAltoDoArray([10, 5, 8, 15, 3])); // Saída: 15
