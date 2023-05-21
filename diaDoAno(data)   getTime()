@@ -1,0 +1,12 @@
+ diaDoAno(data) 
+ 
+ 
+ function diaDoAno(data) {
+  const inicioAno = new Date(data.getFullYear(), 0, 1);
+  const difeMs = data.getTime() - inicioAno.getTime();
+  const difeDias = Math.floor(difeMs / (1000 * 60 * 60 * 24));
+
+  return difeDias + 1;
+}
+
+console.log(diaDoAno(new Date(2023, 5, 21))); // Output: 172
