@@ -8,3 +8,8 @@ function contaParesDoArray(array) {
     return contaParesDoArray(array.slice(1));
   }
 }
+
+
+function contaParesDoArray(array) {
+  return array.length === 0 ? 0 : (array[0] % 2 === 0 ? 1 : 0) + contaParesDoArray(array.slice(1));
+}
