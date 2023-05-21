@@ -85,5 +85,14 @@ function mesPorExtensoBilingue(data, lingua) {
         return data.toLocaleString('en-US', { month: 'long' })
     }
 } 
+
+function mesPorExtensoBilingue(data, lingua) {
+  return lingua === 'pt'
+    ? data.toLocaleString('pt-PT', { month: 'long' }).replace(/^\w/, (c) => c.toUpperCase())
+    : lingua === 'en'
+    ? data.toLocaleString('en-US', { month: 'long' })
+    : '';
+}
+
 esses são os de data que eu não uso Mapa ou Array
 uso esse método toLocaleString()
