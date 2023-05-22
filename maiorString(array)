@@ -1,0 +1,8 @@
+function maiorString(array){
+ let maiorS = "";
+
+ for (let i = 0; i < array.length; i++){
+     maiorS = array[i].length > maiorS.length ? array[i] : maiorS
+ }
+ return maiorS
+}
