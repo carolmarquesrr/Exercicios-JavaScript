@@ -1,0 +1,52 @@
+npm init -y
+
+instalar express e nodemon:
+npm i -S express -S nodemon
+
+no package.json, add scripts:
+"start" : "node run index.js",
+"dev" : "nodemon index.js"
+
+Agora criamos o ficheiro "index.js"
+
+importamos o express
+const express = require("express")
+
+guardamos numa variavel a execução da função express()
+const application = express()
+
+criamos uma porta (de 3000-6000):
+const PORT = 3050
+
+Metemos o nosso backend à escuta na porta que criamos:
+application.listen(PORT, () => console.log(`Listening on http://localhost:${PORT} `))
+
+Usamos o nodemon para atualizar sem precisar de reiniciar:
+application.use(express.json())
+
+Podemos correr na consola: npm run dev
+
+
+Agora podemos criar o nosso backend sobre os nossos animais:
+
+Criamos um array para colocarmos todos os nossos animais, cada animal é um objeto
+const arrayAnimais = []
+
+Começamos por criar um get para obtermos todos os nossos animais
+application.get("/api/animal", (req, resp) => {
+    return resp.status(200).json(arrayAnimais)
+})
+
+Em seguida, criamos um get para obtermos um animal específico (pelo ID):
+application.get("/api/animal/:id", (req,resp) => {
+    return resp.status(200).json(arrayAnimais[req.params.id])
+})
+
+Podemos agora criar o nosso post para adicionarmos um animal:
+application.get("/api/animal/:name/:idade", (req,resp) => {
+    const name = req.params.name
+    const idade = req.params.idade
+    arrayAnimais.push({name,idade, id: arratAnimais.length})
+    return resp.status(200).json(arrayAnimais
+)
+})
