@@ -4,3 +4,8 @@ function somatorio(array){
     let soma = array.reduce((acc,cur) => acc + cur, initial);
 return soma;
 }
+
+function somatorio(array) {
+  return array.reduce((acc, cur) => acc + cur, 0);
+}
+
