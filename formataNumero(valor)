@@ -1,0 +1,27 @@
+function formataNumero(valor) {
+  // Verifica se o argumento é um número
+  if (typeof valor !== 'number') {
+    return "Número não válido.";
+  }
+
+  // Converte o número para uma string
+  const numeroString = valor.toString();
+
+  // Cria um array para armazenar os caracteres formatados
+  const caracteresFormatados = [];
+
+  // Percorre os caracteres da string
+  for (let i = 0; i < numeroString.length; i++) {
+    // Adiciona o caractere atual ao array
+    caracteresFormatados.push(numeroString[i]);
+
+    // Verifica se o caractere atual e o próximo são pares
+    if (i < numeroString.length - 1 && parseInt(numeroString[i]) % 2 === 0 && parseInt(numeroString[i + 1]) % 2 === 0) {
+      // Adiciona um hífen ao array
+      caracteresFormatados.push('-');
+    }
+  }
+
+  // Retorna a string final formatada
+  return caracteresFormatados.join('');
+}
