@@ -13,12 +13,22 @@ console.log(contaNumeroDeDivisoesPorDois(9)); // output deve ser 3
 
 
 
+
 Cria uma função que recebe como argumento um número e retorna
 o número de vezes em que é possível fazer a divisão inteira desse número por 2.
 Utiliza o que aprendeste sobre FOR ou WHILE para resolver este exercício.
 
-     exemplo 
-        contaNumeroDeDivisoesPorDois(9); //3 
-        //1. 9/2 = 4
-        //2. 4/2 = 2
-        //3. 2/2 = 1
+function contaNumeroDeDivisoesPorDois(n) {
+  let count = 0;
+
+  while (n >= 2) {
+    n = Math.floor(n / 2);
+    count++;
+  }
+
+  return count;
+}
+
+console.log(contaNumeroDeDivisoesPorDois(9)); // 3
+console.log(contaNumeroDeDivisoesPorDois(16)); // 4
+console.log(contaNumeroDeDivisoesPorDois(5)); // 2
