@@ -11,3 +11,49 @@ function stringSuperReduzida(str) {
   
   return result.length > 0 ? result : "String Vazia";
 }
+
+
+
+Implementa a função
+stringSuperReduzida que recebe uma
+string e retorna a string que resulta de remover consecutivamente pares de elementos iguais.
+Se a string resultante for vazia, deve retornar "String Vazia"
+
+
+function stringSuperReduzida(str) {
+
+Exemplo:
+ 
+stringSuperReduzida("abbcd") //acd
+stringSuperReduzida("abba") //String Vazia
+stringSuperReduzida("abbcbbca")// String Vazia
+
+function stringSuperReduzida(str) {
+  let result = "";
+
+
+for (let i = 0; i < str.length; i++) {
+    if (result.length > 0 && result[result.length - 1] === str[i]) {
+      result = result.slice(0, result.length - 1);
+    } else {
+      result += str[i];
+    }
+  }
+
+  return result.length === 0 ? "String Vazia" : result;
+}
+
+
+
+
+function stringSuperReduzida(str) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    result.length > 0 && result[result.length - 1] === str[i]
+      ? (result = result.slice(0, result.length - 1))
+      : (result += str[i]);
+  }
+  return result.length === 0 ? "String Vazia" : result;
+}
+
+console.log(stringSuperReduzida("abbcbbcaa"));
