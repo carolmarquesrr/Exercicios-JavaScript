@@ -1,0 +1,11 @@
+Cria a função determinaTamanhoDeObjeto que recebe
+um argumento do tipo objeto e retorna o tamanho
+(quantidade de propriedades) do objeto.
+Podes utilizar o método Object.keys() 
+
+
+function determinaTamanhoDeObjeto(objeto) {
+  if (typeof objeto === 'object') {
+    return Object.keys(objeto).length;
+  }
+}
