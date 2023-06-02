@@ -1,0 +1,17 @@
+function computeMedian(array) {
+
+  array.sort((a, b) => a - b);
+
+
+  const length = array.length;
+
+
+  if (length % 2 === 1) {
+    
+    return array[Math.floor(length / 2)];
+  } else {
+    
+    const middleIndex = length / 2;
+    return (array[middleIndex - 1] + array[middleIndex]) / 2;
+  }
+} 
